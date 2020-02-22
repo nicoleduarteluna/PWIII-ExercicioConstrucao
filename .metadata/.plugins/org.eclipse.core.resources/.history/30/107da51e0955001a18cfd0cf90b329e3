@@ -1,0 +1,43 @@
+
+public class Piscina {
+	public static void main(String[] args) {
+		int diametro = 6;
+		int largura = 20;
+		int comprimento = 20;
+		System.out.println("O raio da piscina é: " + raio(diametro));
+		System.out.println("A área da piscina é: " + areaPiscina(raio(diametro)));
+		System.out.println("O total a ser gasto na piscina é: " + total(areaPiscina(raio(diametro))));
+		System.out.println("A área da casa é: " + areaCasa(comprimento,largura));
+		System.out.println("A área da casa corresponde a porcentagem exigida: " + porcentagemCasa(areaCasa(comprimento,largura)));
+		System.out.println("O total a ser gasto na casa é: " + totalCasa(porcentagemCasa(areaCasa(comprimento,largura))));
+		System.out.println("O total a ser gasto na construção é: "  );
+	}
+	
+	public static int raio (int diametro) {
+		return diametro/2;
+	}
+	
+	public static double areaPiscina (int raio ) {
+		return Math.PI * Math.pow(raio, 2) ;
+	}
+	
+	public static double total(double areaPiscina) {
+		return areaPiscina * 75;
+	}
+	
+	public static int areaCasa (int comprimento, int largura) {
+		return comprimento * largura;
+	}
+	 
+	public static double porcentagemCasa (int areaCasa) {
+		return 0.5 * areaCasa;
+	}
+	
+	public static double totalCasa (double porcentagemCasa) {
+		return porcentagemCasa * 60;
+	}
+	
+	public static double totalConstrucao (double total, double totalCasa) {
+		return total + totalCasa;
+	}
+}

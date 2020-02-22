@@ -1,0 +1,14 @@
+
+public class Piscina {
+	public static void main(String[] args) {
+		int diametro = 6;
+		System.out.println("A área da piscina é: " + areaPiscina(diametro));
+	}
+	
+	public static int raio (int diametro) {
+		return diametro/2;
+	}
+	public static double areaPiscina (int raio ) {
+		return Math.PI * raio ;
+	}
+}

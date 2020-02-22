@@ -1,0 +1,16 @@
+
+public class RevisaoMetodos {
+	public static void main(String[] args) {
+		int num = 10;
+		System.out.println("O próximo número é:" + proximo (10));
+		System.out.println("O próximo número multiplicado por 2 é:" + dobroProximo(10));
+	}
+	
+	public static int proximo (int num) {
+		return num + 1;
+	}
+	
+	public static int dobroProximo (int num) {
+		return (num +1) * 2;
+	}
+}

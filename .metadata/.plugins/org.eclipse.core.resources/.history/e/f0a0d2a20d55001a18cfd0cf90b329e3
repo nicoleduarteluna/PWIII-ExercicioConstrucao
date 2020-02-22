@@ -1,0 +1,8 @@
+
+public class CalculadoraConstrucao {
+	public static void main(String[] args) {
+		int diametro = 6;
+		int largura = 20;
+		int comprimento = 20;
+	}
+}
